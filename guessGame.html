@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess game</title>
+</head>
+<body>
+
+<script>
+    let number = prompt("Enter your number: ");
+    nums = [];
+    for(let i =0; i<100; i++){
+        nums = Math.round(Math.random()*50);
+    }
+    numSecrect = nums[10];
+    if(number == numSecrect){
+        alert('you win!');
+    }
+    else{
+        alert('you lose! good luck next time ')
+    }
+</script>
+</body>
+</html>
